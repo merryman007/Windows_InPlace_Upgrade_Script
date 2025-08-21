@@ -34,23 +34,23 @@ It bypasses compatibility checks (TPM, CPU, RAM, Secure Boot, etc.), mounts the 
 ---
 
 ## Notes & Troubleshooting Known Issues
-If no ISO is detected, script exits with an error.
-You may encounter the “We couldn’t update system reserved partition” error installing Windows 11.
-This is caused by the EFI partiton not having enough free space. You can temporarily fix this by running the code snippet below in elevated CMD terminal:
+If no ISO is detected, the script exits with an error.
+You may encounter the “We couldn’t update system reserved partition” error when installing Windows 11.
+This is caused by the EFI partition not having enough free space. You can temporarily fix this by running the code snippet below in an elevated CMD terminal:
 
-"
+
 mountvol y: /s
 y:
 cd EFI\Microsoft\Boot\Fonts
 del*
 
-"
-The system may ask you if you are sure to continue, press Y and then Enter to continue.
-If the above code snippet doesn't work, kindly use AOMEI free Standard edition to resize/expand the EFI partition to 1GB.
+
+The system may ask if you are sure to continue. Press Y and then Enter to proceed.
+If the above code snippet doesn't work, kindly use AOMEI Free Standard edition to resize/expand the EFI partition to 1GB.
 
 Make sure you have enough free disk space.
 
-The script disables dynamic updates to speed up the process — you can remove /dynamicupdate disable if you prefer downloading latest updates during install.
+The script disables dynamic updates to speed up the process — you can remove /dynamicupdate disable if you prefer downloading the latest updates during install.
 
 
 Contribution
