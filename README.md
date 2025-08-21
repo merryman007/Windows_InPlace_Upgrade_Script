@@ -33,7 +33,7 @@ It bypasses compatibility checks (TPM, CPU, RAM, Secure Boot, etc.), mounts the 
 
 ---
 
-⚠️ Notes & Troubleshooting Known Issues
+## Notes & Troubleshooting Known Issues
 If no ISO is detected, script exits with an error.
 You may encounter the “We couldn’t update system reserved partition” error installing Windows 11.
 This is caused by the EFI partiton not having enough free space. You can temporarily fix this by running the code snippet below in elevated CMD terminal:
