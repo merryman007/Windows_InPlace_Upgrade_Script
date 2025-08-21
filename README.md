@@ -40,8 +40,11 @@ This is caused by the EFI partition not having enough free space. You can tempor
 
 
 mountvol y: /s
+
 y:
+
 cd EFI\Microsoft\Boot\Fonts
+
 del*
 
 
